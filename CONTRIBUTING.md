@@ -1,4 +1,4 @@
-# Contribution Guide 🚀
+# Contribution Guide
 
 Welcome to the **SMLE** project! This guide explains how to prepare your changes, work with Git, and open good pull requests.
 
@@ -14,7 +14,6 @@ If you plan a bigger feature or refactor, discuss it first to confirm that it fi
 If you are new to Git and GitHub, the steps below describe a simple way to contribute:
 
 - Fork the repository to your own GitHub account.
-
 - Clone your fork locally:
   `git clone https://github.com/<your-username>/smle.git`
 - Create a new branch for your work:
@@ -60,3 +59,4 @@ If you find a bug or have a feature request but do not plan to implement it your
 - For feature requests, explain the use case and how it would benefit SMLE users.
 
 If you need guidance at any point, use the Discord server or the GitHub discussion thread to ask questions and coordinate with maintainers and other contributors.
+

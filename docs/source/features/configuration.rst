@@ -11,19 +11,25 @@ You can generate a blank template using:
 You can configure the ``smle.yaml`` file with the hyperparameters and options for your project. The structure of the ``smle.yaml`` file is:
 
 .. code-block:: yaml
-
     # ---------------------------------------
     # SMLE Configuration (Modify Carefully)
     # ---------------------------------------
 
     project: project_name
 
+    # ---------------------------
+    # Logging & Tracking
+    # ---------------------------
+
     logger:
-        dir: logger
+    dir: logger
 
     wandb:
-        entity: your_wandb_account
-        key: your_wandb_key
+    entity: your_wandb_account
+
+    # ---------------------------------------
+    # Example of User Section
+    # ---------------------------------------
 
     seed: seed
     device: 'cpu'/'cuda'
