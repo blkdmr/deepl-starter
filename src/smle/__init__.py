@@ -4,6 +4,7 @@ import os
 from colorama import Fore, Style
 from typing import Callable, Optional, Any
 
+
 from smle.args import Parser
 from smle.logging import Logger
 from smle.utils import generate_haiku_id
@@ -68,7 +69,6 @@ class SMLE:
             sys.exit(1)
         finally:
             self._logger.stop()
-
 
     @property
     def config_file(self) -> str:
