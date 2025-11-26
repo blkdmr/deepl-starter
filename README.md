@@ -8,7 +8,7 @@
 
 **Stop writing boilerplate. Start training.**
 
-pySMLE (you can simply call it SMILE!) is a lightweight Python framework that automates the "boring stuff" in Machine Learning projects. It handles configuration parsing, logging setup, and experiment tracking so you can focus on the model.
+pySMLE (you can simply call it **SMILE**) is a lightweight Python framework that automates the "boring stuff" in Machine Learning projects. It handles configuration parsing, logging setup, and experiment tracking so you can focus on the model.
 
 ## Why pySMLE?
 
