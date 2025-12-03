@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿from colorama import Fore, Style
+=======
+from colorama import Fore, Style
+>>>>>>> 5326110 (Fix: remove outdated notifier code from FENN main app)
 from typing import Callable, Optional, Any
 
 from fenn.args import Parser
@@ -18,7 +22,11 @@ class FENN:
 
         self._parser: Parser = Parser()
         self._keystore: KeyStore = KeyStore()
+<<<<<<< HEAD
         self._logger: Logger = Logger.get_instance()   # SINGLETON
+=======
+        self._logger: Logger = Logger.get_instance()
+>>>>>>> 5326110 (Fix: remove outdated notifier code from FENN main app)
         self._config_file: str = None
 
         self._entrypoint_fn: Optional[Callable] = None
@@ -28,6 +36,12 @@ class FENN:
         return entrypoint_fn
 
     def run(self) -> Any:
+<<<<<<< HEAD
+=======
+        """
+        The method that executes the application's core logic.
+        """
+>>>>>>> 5326110 (Fix: remove outdated notifier code from FENN main app)
 
         if not self._entrypoint_fn:
             raise RuntimeError(
