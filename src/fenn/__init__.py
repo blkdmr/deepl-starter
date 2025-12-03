@@ -40,6 +40,16 @@ class FENN:
         The method that executes the application's core logic.
         """
 
+        self._logger._original_print(
+            "***********************************************************************************\n"
+            f"{Style.BRIGHT}Hi, thank you for using the {Fore.GREEN}PyFenn{Style.RESET_ALL}{Style.BRIGHT} framework.{Style.RESET_ALL}\n"
+            f"PyFenn is still in an {Fore.CYAN}alpha version{Style.RESET_ALL}.\n"
+            "If you find a bug or inconsistency, if you want to contribute or request a feature,\nplease open an issue at "
+            f"{Fore.CYAN}https://github.com/pyfenn/fenn/issues{Style.RESET_ALL}.\n"
+            f"{Style.BRIGHT}Thank you for your support!{Style.RESET_ALL}\n"
+            "***********************************************************************************\n"
+        )
+
         if not self._entrypoint_fn:
             raise RuntimeError(
                 f"{Fore.RED}[FENN][EXCEPTION] No main function registered. "

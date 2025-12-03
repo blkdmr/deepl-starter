@@ -49,15 +49,15 @@ class Logger:
 
     def system_info(self, message: str) -> None:
         tag = f"{Fore.GREEN}[FENN][INFO]{Style.RESET_ALL}"
-        self._log_print(f"{tag} {message}")
+        self._system_print(f"{tag} {message}")
 
     def system_warning(self, message: str) -> None:
         tag = f"{Fore.YELLOW}[FENN][WARNING]{Style.RESET_ALL}"
-        self._log_print(f"{tag} {message}")
+        self._system_print(f"{tag} {message}")
 
     def system_exception(self, message: str) -> None:
         tag = f"{Fore.RED}[FENN][EXCEPTION]{Style.RESET_ALL}"
-        self._log_print(f"{tag} {message}")
+        self._system_print(f"{tag} {message}")
 
     # ==========================================================
     # USER LOGS — no tags, just printed normally
@@ -108,6 +108,17 @@ class Logger:
     # ==========================================================
     # INTERNAL PRINT HANDLER
     # ==========================================================
+
+    def _system_print(
+        self,
+        *objects: Any,
+        sep: str = " ",
+        end: str = "\n",
+        file: Optional[Any] = None,
+        flush: bool = False,
+    ) -> None:
+
+        self._original_print(*objects, sep=sep, end=end, file=file, flush=flush)
 
     def _log_print(
         self,

@@ -5,3 +5,6 @@ dist/
 .env
 tests/
 diff.txt
+venv/
+.idea
+logger/
